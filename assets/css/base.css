@@ -1,0 +1,83 @@
+:root {
+  --white: #ffffff;
+  --white-soft: #f8f8f8;
+  --white-mute: #f2f2f2;
+  --white-dove: #f0efe7;
+
+  --black: #181818;
+  --black-soft: #222222;
+  --black-mute: #282828;
+
+  --gray: #888888;
+  --gray-mute: #989898;
+  --gray-soft: #ababab;
+  --gray-fog: #ababab5b;
+  --gray-dove: #cfcfcf;
+
+  --indigo: #2c3e50;
+
+  --divider-light-1: rgba(60, 60, 60, 0.29);
+  --divider-light-2: rgba(60, 60, 60, 0.12);
+  --divider-dark-1: rgba(84, 84, 84, 0.65);
+  --divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --bright-light-1: rgba(255, 255, 255, 0.919);
+
+  --transparent: #ababab00;
+  --transparent-2: rgba(255, 255, 255, 0.271);
+
+  --text-light-1: var(--white);
+  --text-light-2: var(--gray-soft);
+  --text-dark-1: var(--black);
+  --text-dark-2: var(--indigo);
+
+  --primary: #00c0ff;
+  --primary-dark: #00a2ff;
+  --primary-dark-2: #0084ff;
+  --primary-blur: #00bfff49;
+
+  --blue-light: lightblue;
+  --marigold: #fdac53;
+  --marigold-dark: #fd9f53;
+  --livingCoral: #ff6f61;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  /* default font-size is 16px*/
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6rem;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes scaleOut {
+  from {
+    height: 0px;
+    opacity: 0.3;
+  }
+  to {
+    height: 70px;
+    opacity: 1;
+  }
+}

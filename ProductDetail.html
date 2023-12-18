@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="p-detail row">
+                <div class="p-detail__preview col-6">
+                    <div class="p-detail__preview__pic">
+                        <input type="radio" name="preview-radio-btn" id="radio1" class="p-detail__preview-radio"
+                            checked />
+                        <input type="radio" name="preview-radio-btn" id="radio2" class="p-detail__preview-radio" />
+                        <input type="radio" name="preview-radio-btn" id="radio3" class="p-detail__preview-radio" />
+                        <div class="p-detail__preview__img active" id="pic-1">
+                            <img src="../assets/img/sample-1.jpg" />
+                        </div>
+                        <div class="p-detail__preview__img" id="pic-2">
+                            <img src="../assets/img/sample-2.jpg" />
+                        </div>
+                        <div class="p-detail__preview__img" id="pic-3">
+                            <img src="../assets/img/sample-3.jpg" />
+                        </div>
+                    </div>
+                    <div class="p-detail__preview__thumbnail">
+                        <!-- <button class="p-detail__preview__thumbnail-btn p-detail__preview__thumbnail-left">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button> -->
+                        <label for="radio1" class="p-detail__preview__thumbnail-img thumbnail-img-1">
+                            <img src="../assets/img/sample-1.jpg" />
+                        </label>
+                        <label for="radio2" class="p-detail__preview__thumbnail-img thumbnail-img-2">
+                            <img src="../assets/img/sample-2.jpg" /></label>
+                        <label for="radio3" class="p-detail__preview__thumbnail-img thumbnail-img-3">
+                            <img src="../assets/img/sample-3.jpg" /></label>
+                        <!-- <button class="p-detail__preview__thumbnail-btn p-detail__preview__thumbnail-right">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button> -->
+                    </div>
+                </div>
+                <div class="p-detail__info col-6">
+                    <h1 class="p-detail__info__title">Áo Tù</h1>
+                    <button class="p-detail__info__btn p-detail__info__add-love">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+
+                    <div class="p-detail__info__rating">
+                        <div class="p-detail__info__rating-stars">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="p-detail__info__rating-review-num">41 reviews</span>
+                    </div>
+                    <p class="p-detail__info__description">Áo tù mang vẻ khốn nạn của người đi tù. Dù bạn đẹp hay
+                        không, khi
+                        bạn khoác lên mình chiếc áo này thì bạn deo ra gì!</p>
+                    <h4 class="p-detail__info-price">Giá: <span>2 năm tù</span></h4>
+                    <h5 class="p-detail__info-sizes">Sizes:
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                    </h5>
+                    <h5 class="p-detail__info-colors">Màu:
+                        <div class="p-detail__info-color p-detail__info-color-1"></div>
+                        <div class="p-detail__info-color p-detail__info-color-2"></div>
+                        <div class="p-detail__info-color p-detail__info-color-3"></div>
+                    </h5>
+                    <label for="quantity">
+                        <h5>Số lượng:</h5>
+                    </label>
+                    <input class="p-detail__info-number__input" type="number" id="quantity" name="quantity" value="1"
+                        min="1">
+                    <div class="p-detail__info__action">
+                        <button class="p-detail__info__btn p-detail__info__action-add-cart">Thêm vào giỏ</button>
+                        <button class="p-detail__info__btn p-detail__info__action-buy">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
