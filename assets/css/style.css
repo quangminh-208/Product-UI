@@ -200,17 +200,16 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .p-detail__preview__img img {
   width: 50%;
+  aspect-ratio: 9/13;
 }
 
-#radio1:checked ~ #pic-1 {
-  display: flex;
-}
-
-#radio2:checked ~ #pic-2 {
-  display: flex;
-}
-
-#radio3:checked ~ #pic-3 {
+#radio1:checked ~ #pic-1,
+#radio2:checked ~ #pic-2,
+#radio3:checked ~ #pic-3,
+#radio4:checked ~ #pic-4,
+#radio5:checked ~ #pic-5,
+#radio6:checked ~ #pic-6,
+#radio7:checked ~ #pic-7 {
   display: flex;
 }
 
@@ -218,29 +217,49 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 100%;
   margin: 20px 0;
   display: flex;
-  flex-wrap: nowrap;
+}
+
+.p-detail__thumbnail-radio {
+  display: none;
+}
+
+#thumb-radio1:checked
+  ~ .p-detail__preview__thumbnail__img-wrapper
+  .thumbnail-img-1 {
+  margin-left: 14px;
+}
+
+#thumb-radio2:checked
+  ~ .p-detail__preview__thumbnail__img-wrapper
+  .thumbnail-img-1 {
+  margin-left: -80%;
 }
 
 .p-detail__preview__thumbnail__img-wrapper {
+  width: 570px;
+  height: 120px;
+  display: flex;
   overflow: hidden;
 }
 
 .p-detail__preview__thumbnail-btn {
+  height: 100%;
+  padding: 0 10px;
   border: none;
+  display: flex;
+  align-items: center;
+  background-color: var(--white-dove);
 }
 
 .p-detail__preview__thumbnail-img {
   width: 15%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 9/13;
   background-color: var(--gray-dove);
+  margin-right: 14px;
 }
 
 .p-detail__preview__thumbnail-img:first-child {
   margin-left: 14px;
-}
-
-.p-detail__preview__thumbnail-img:not(:last-child) {
-  margin-right: 7px;
 }
 
 .p-detail__preview__thumbnail-img:hover {
@@ -294,15 +313,15 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .p-detail__info-color-1 {
-  background: url('../img/sample-1.jpg')  no-repeat center / contain;
+  background: url("../img/sample-1.jpg") no-repeat center / contain;
 }
 
 .p-detail__info-color-2 {
-  background: url('../img/sample-2.jpg')  no-repeat center / contain;
+  background: url("../img/sample-2.jpg") no-repeat center / contain;
 }
 
 .p-detail__info-color-3 {
-  background: url('../img/sample-3.jpg')  no-repeat center / contain;
+  background: url("../img/sample-3.jpg") no-repeat center / contain;
 }
 
 .p-detail__info-number__input {
