@@ -183,6 +183,11 @@ input[type="number"]::-webkit-outer-spin-button {
   flex-direction: column;
 }
 
+.p-detail__preview__pic {
+  border-radius: 10px;
+  background-color: var(--white-dove);
+}
+
 .p-detail__preview-radio {
   display: none;
 }
@@ -212,26 +217,34 @@ input[type="number"]::-webkit-outer-spin-button {
 .p-detail__preview__thumbnail {
   width: 100%;
   margin: 20px 0;
-  position: relative;
   display: flex;
   flex-wrap: nowrap;
 }
 
-/* .p-detail__preview__thumbnail-btn {
-  border: none;
-  position: absolute;
-  height: 100%;
+.p-detail__preview__thumbnail__img-wrapper {
+  overflow: hidden;
 }
 
-.p-detail__preview__thumbnail-right {
-  right: 0;
-} */
+.p-detail__preview__thumbnail-btn {
+  border: none;
+}
 
 .p-detail__preview__thumbnail-img {
   width: 15%;
   aspect-ratio: 3/4;
   background-color: var(--gray-dove);
-  margin: 0 14px;
+}
+
+.p-detail__preview__thumbnail-img:first-child {
+  margin-left: 14px;
+}
+
+.p-detail__preview__thumbnail-img:not(:last-child) {
+  margin-right: 7px;
+}
+
+.p-detail__preview__thumbnail-img:hover {
+  outline: 2px solid var(--primary);
 }
 
 .p-detail__preview__thumbnail-img img {
@@ -251,12 +264,45 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .p-detail__info-price {
-  margin-bottom: 12px;
+  margin: 20px 0;
 }
 
 .p-detail__info-price span {
   font-weight: 500;
   color: var(--primary);
+}
+
+.p-detail__info-sizes span {
+  margin: 0 12px;
+  padding: 4px 10px;
+  border: 1px solid var(--white-dove);
+}
+
+.p-detail__info-sizes span:hover {
+  background-color: var(--white-dove);
+}
+
+.p-detail__info-colors {
+  display: flex;
+  margin: 20px 0;
+}
+
+.p-detail__info-color {
+  width: 15%;
+  aspect-ratio: 3/4;
+  margin: 0 10px;
+}
+
+.p-detail__info-color-1 {
+  background: url('../img/sample-1.jpg')  no-repeat center / contain;
+}
+
+.p-detail__info-color-2 {
+  background: url('../img/sample-2.jpg')  no-repeat center / contain;
+}
+
+.p-detail__info-color-3 {
+  background: url('../img/sample-3.jpg')  no-repeat center / contain;
 }
 
 .p-detail__info-number__input {
@@ -282,8 +328,10 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: var(--primary-dark);
 }
 .p-detail__info__add-love {
+  font-size: 2rem;
   background-color: transparent;
   position: absolute;
+  margin: 0;
   top: 0;
   right: 20px;
 }
@@ -296,6 +344,7 @@ input[type="number"]::-webkit-outer-spin-button {
   color: var(--text-light-1);
   background-color: var(--marigold);
 }
+
 .p-detail__info__action-buy:hover {
   background-color: var(--marigold-dark);
 }
